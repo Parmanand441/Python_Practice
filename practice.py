@@ -339,9 +339,94 @@ password = ''.join(random.choice(characters) for _ in range(length))
 
 # Show the result
 print("Your generated password is:", password)'''
+#append list
+'''thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)'''
+#insert list
+'''thislist = ["Parmanand Rai", "Baboo Parkash", "Fasi Ullah"]
+thislist.insert(2, "Muzaimal Hassann")
+print(thislist)'''
+#extend list
+'''thislist_1 = ["Parmanand Rai", "Baboo Parkash", "Moid Khan", "Fasi Ullah"]
+thislist_2 = ["Rizwan", "Anas"]
+thislist_2.extend(thislist_1)
+print(thislist_1)'''
+#remove list
+'''thislist = ["Parmanand Rai", "Baboo Parkash", "Moid Khan"]
+thislist.remove("Moid Khan")
+print(thislist)'''
+'''thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove(thislist[0])
+print(thislist)
+'''
+#pop method in list
 
-    
+'''thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)'''
+# delete method in lists
+'''thislist = ["Banana", "Apple", "Cherry", "Pinapple"]
+del thislist[0]
+print(thislist)'''
 
+#clear list
+'''thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)'''
 
+'''thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+ print(x)'''
 
+# array
+# List of categories with items
+'''categories = [
+    [
+        "Fruits", 
+        ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+    ],
+    [
+        "Vegetables", 
+        ["Carrot", "Broccoli", "Spinach", "Peas", "Potato"]
+    ]
+]
 
+# Print table header
+print(f"{'Index':<10} {'Category':<10} {'Item':<20}")
+print("-" * 40)
+
+# Loop through each category and its items
+for category, items in categories:
+    for index, item in enumerate(items):
+        cat_name = category if index == 0 else ""
+        print(f"{index:<10} {cat_name:<10}  {item:<20}")'''
+#sort list item
+'''thislist = ["Parmanand Rai", "Baboo Parkash", "Ehsan Khan", "Fasi Ullah"]
+thislist.sort()
+print(thislist)'''
+'''thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)'''
+# reverese list item
+'''thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)'''
+'''thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(thislist)
+print(f"{mylist} Copied version")'''
+# join two lists
+'''list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)'''
+## date and time.
+'''import datetime
+x = datetime.datetime.now()
+print(x)'''
+'''
+import datetime
+x = datetime.datetime.now()
+print(x.year)
+print(x.strftime("%a"))'''
